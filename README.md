@@ -58,6 +58,7 @@ Use the `--help` option to get a full, up-to-date look at what the options are, 
 * `--date-format`: Date format to use when guessing date columns and parsing data.  Defaults to `MM/DD/YYYY`.  See [moment.js](http://momentjs.com/docs/) for options.
 * `--datetime-format`: Datetime format to use when guessing date columns and parsing data.  Defaults to `MM/DD/YYYY HH:mm:ss a`.  See [moment.js](http://momentjs.com/docs/) for options.
 * `--config`: Allows to use a JS file that exports configuration for Tables.  Any other options will override the values in the file.  This allows for options that are not easily supported on a command line.  See Options section under Library Use.
+* `--output-config`: Exports the guessed configuration.
 
 ### Piping
 
