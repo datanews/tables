@@ -49,6 +49,7 @@ Use the `--help` option to get a full, up-to-date look at what the options are, 
 * `--id`: ID to use for resuming stream; if an input file is provided, the filename is used by default.
 * `--restart`: Restart any resuming as well as remove existing data and tables.  **WARNING: DELETES DATA**  Use this is you don't have a unique key defined or if your model has changed.
 * `--batch-size`: Numbers of rows to import at once. Default is 1000.  Use lower or higher numbers depending the database and how it is configured.
+* `--guess-limit`: Numbers of rows to analyze for data structure and types. Default is 1000.  Use a higher number than the default if your data have many inconsistencies.
 * `--type`: Force type of parsing.  This is determined from filename and defaults to `csv`.  Valid values are `csv`, `tsv`, `json`, `ndjson`, `html`, or `custom`.
 * `--csv-headers`: Use the keyword, false, if there are no headers. Or use a comma separated list of headers. Defaults to reading headers from file.  Forces type to CSV.
 * `--csv-delimiter`: CSV delimiter character.  Defaults to `,`.  If you need to use a tab character, use `--csv-delimiter=$'\t'`.  Forces type to CSV.
