@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  test:
     docker:
       - image: circleci/node:12
 
@@ -22,3 +22,9 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: npm test
+
+workflows:
+  version: 2
+  just-test:
+    jobs:
+      - test
