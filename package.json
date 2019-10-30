@@ -1,6 +1,6 @@
 {
   "name": "tables",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Tables is a simple command-line tool and powerful library for importing data like a CSV or JSON file into relational tables.",
   "main": "index.js",
   "bin": {
