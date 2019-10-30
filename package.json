@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/datanews/tables#readme",
   "engines": {
-    "node": ">=0.10.3"
+    "node": ">=8"
   },
   "dependencies": {
     "chalk": "^1.1.1",
@@ -44,7 +44,7 @@
     "pg-hstore": "^2.3.2",
     "progress": "^1.1.8",
     "sequelize": "^3.19.3",
-    "sqlite3": "^3.1.8",
+    "sqlite3": "^4.0.0",
     "tito": "^0.4.0",
     "unpipe": "^1.0.0"
   },
