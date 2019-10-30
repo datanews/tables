@@ -32,7 +32,7 @@
     "chalk": "^1.1.1",
     "cli-spinner": "^0.2.4",
     "commander": "^2.9.0",
-    "csv-parse": "^1.0.2",
+    "csv-parse": "^4.6.5",
     "d3-queue": "^2.0.3",
     "dotenv": "^2.0.0",
     "event-stream": "^3.3.2",
