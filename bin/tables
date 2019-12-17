@@ -51,6 +51,7 @@ command.option("-p, --data [file]", "Path to data file for resuming streams.  De
 command.option("-z, --id [name]", "ID to use for resuming stream; if an input file is provided, " +
   ls + "this is used.  For CSV only.");
 command.option("-b, --batch-size [num]", "Numbers of rows to import at once. Default is 1000");
+command.option("-g, --guess-limit [num]", "Numbers of rows to analyze for data structure and types. Default is 1000");
 command.option("-r, --restart", "WARNING Restarts any resuming, deletes existing data, and existing tables in DB.");
 command.option("-s, --silent", "Suppress output besides errors.");
 command.option("-u, --debug", "Output stack trace if available.");
@@ -82,6 +83,7 @@ var options = {
   dateFormat: command.dateFormat ? command.dateFormat : undefined,
   datetimeFormat: command.datetimeFormat ? command.datetimeFormat : undefined,
   batchSize: command.batchSize ? command.batchSize : undefined,
+  guessLimit: command.guessLimit ? command.guessLimit : undefined,
   outputConfig: !!command.outputConfig,
   restart: !!command.restart,
   output: !command.silent
